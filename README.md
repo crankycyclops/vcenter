@@ -2,7 +2,7 @@
 Simple jQuery plugin to vertically center an element inside its parent
 
 Example:
-
+<code>
 <div style="height: 500px;" id="parent">
 
 	<div id="child">
@@ -10,6 +10,7 @@ Example:
 	</div>
 
 </div>
+</code>
 
 <script>
 
