@@ -3,16 +3,14 @@ Simple jQuery plugin to vertically center an element inside its parent
 
 Example:
 
-<div style="height: 500px;" id="parent">
+&lt;div style="height: 500px;" id="parent"&gt;
 
-	<div id="child">
-		Vertically centered content
-	</div>
+&lt;div id="child"&gt;Vertically centered content&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-<script>
+&lt;script&gt;
 
 $('#child').center();
 
-</script>
+&lt;/script&gt;
