@@ -5,9 +5,7 @@ Example:
 
 &lt;div style="height: 500px;" id="parent"&gt;
 
-	&lt;div id="child"&gt;
-		Vertically centered content
-	&lt;/div&gt;
+&lt;div id="child"&gt;Vertically centered content&lt;/div&gt;
 
 &lt;/div&gt;
 
