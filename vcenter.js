@@ -16,9 +16,21 @@ $.fn.center = function(options) {
 		offset = options.offset;
 	}
 
-	var space = this.parent().height() - this.outerHeight();
-	if (space > 1) {
-		this.css('margin-top', '' + (Math.floor(space / 2) + offset) + 'px');
-	}
+	$.each(this, function (i, element) {
+
+		var space = $(element).parent().height() - $(element).outerHeight();
+
+		if (space > 1) {
+
+			var cssProperty = 'margin-top';
+
+			// use padding instead of margin-top (effects the way some things are rendered)
+			if (undefined != options && undefined != options.padding && options.padding) {
+				cssProperty = 'padding-top';
+			}
+
+			$(element).css(cssProperty, '' + (Math.floor(space / 2) + offset) + 'px');
+		}
+	});
 };
 
